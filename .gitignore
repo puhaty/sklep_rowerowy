@@ -1,6 +1,5 @@
 src/*.o
 .vscode/
-.dblite
 CMakeFiles/
 *.exe
 cmake_install.cmake

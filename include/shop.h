@@ -1,13 +1,11 @@
 #ifndef SHOP_H
 #define SHOP_H
-#include "warehouse.h"
-#include "basket.h"
-#include "receipt.h"
+#include "manager.h"
 
-class Shop final 
+class Shop 
 {
 public:
-    int manage();
+    void run_shop();
 };
 
 #endif /* SHOP_H */
