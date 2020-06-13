@@ -163,6 +163,33 @@ src/basket.cpp.s:
 	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket.cpp.s
 .PHONY : src/basket.cpp.s
 
+src/basket_presenter.o: src/basket_presenter.cpp.o
+
+.PHONY : src/basket_presenter.o
+
+# target to build an object file
+src/basket_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket_presenter.cpp.o
+.PHONY : src/basket_presenter.cpp.o
+
+src/basket_presenter.i: src/basket_presenter.cpp.i
+
+.PHONY : src/basket_presenter.i
+
+# target to preprocess a source file
+src/basket_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket_presenter.cpp.i
+.PHONY : src/basket_presenter.cpp.i
+
+src/basket_presenter.s: src/basket_presenter.cpp.s
+
+.PHONY : src/basket_presenter.s
+
+# target to generate assembly for a file
+src/basket_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket_presenter.cpp.s
+.PHONY : src/basket_presenter.cpp.s
+
 src/bike.o: src/bike.cpp.o
 
 .PHONY : src/bike.o
@@ -419,6 +446,9 @@ help:
 	@echo "... src/basket.o"
 	@echo "... src/basket.i"
 	@echo "... src/basket.s"
+	@echo "... src/basket_presenter.o"
+	@echo "... src/basket_presenter.i"
+	@echo "... src/basket_presenter.s"
 	@echo "... src/bike.o"
 	@echo "... src/bike.i"
 	@echo "... src/bike.s"

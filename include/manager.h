@@ -3,6 +3,7 @@
 #include "warehouse.h"
 #include "warehouse_presenter.h"
 #include "basket.h"
+#include "basket_presenter.h"
 #include "receipt.h"
 
 class Manager final 
