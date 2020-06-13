@@ -22,9 +22,11 @@ int Manager::manage()
     std::cout << std::endl;
     
     
-    Warehouse warehouse;
-    Basket basket; 
-    Receipt receipt;
+    Warehouse warehouse_;
+    Warehouse_presenter Warehouse_presenter_;
+    //warehouse.add_products("produkty/produkty.txt");
+    Basket basket_; 
+    Receipt receipt_;
 
     for(;;)
     { 
@@ -47,7 +49,7 @@ int Manager::manage()
                 return 0; 
 
             case 1 :
-                warehouse.show_products();
+                Warehouse_presenter_.show_products();
                 break; 
 
             case 2 :
@@ -62,7 +64,7 @@ int Manager::manage()
                     std::cout << "Wprowadz dane jeszcze raz: ";
                     std::cin >> number;
                 }
-                warehouse.show_product_information(number);
+                Warehouse_presenter_.show_product_information(number);
                 break;
             
             case 3 :
@@ -77,7 +79,7 @@ int Manager::manage()
                     std::cout << "Wprowadz dane jeszcze raz: ";
                     std::cin >> number;
                 }
-                basket.add_to_basket(number, warehouse);
+                basket_.add_to_basket(number, warehouse_);
                 break;
             
             case 4 :
@@ -92,22 +94,22 @@ int Manager::manage()
                     std::cout << "Wprowadz dane jeszcze raz: ";
                     std::cin >> number;
                 }
-                basket.delete_from_basket(number);
+                basket_.delete_from_basket(number);
                 break;
 
             case 5 :
-                basket.clear_basket();
+                basket_.clear_basket();
                 std::cout << "produkty zostaly usuniete :)" << std::endl;
                 break;
 
             case 6 :
-                basket.show_product();
+                basket_.show_product();
                 break;
 
             case 7 :
-                basket.final();
-                receipt.generate(basket);
-                basket.clear_basket();
+                basket_.final();
+                receipt_.generate(basket_);
+                basket_.clear_basket();
                 std::cout << std::endl;
                 break;
 
@@ -155,11 +157,11 @@ int Manager::manage()
                                 break;
 
                             case 1 :
-                                warehouse.sort_by_name_asc();
+                                warehouse_.sort_by_name_asc();
                                 break;
                                 
                             case 2 :
-                                warehouse.sort_by_name_desc();
+                                warehouse_.sort_by_name_desc();
                                 break;
 
                             default: std::cout << "niepoprawna opcja" << std::endl;
@@ -187,11 +189,11 @@ int Manager::manage()
                                 break;
 
                             case 1 :
-                                warehouse.sort_by_price_asc();
+                                warehouse_.sort_by_price_asc();
                                 break;
                                 
                             case 2 :
-                                warehouse.sort_by_price_desc();
+                                warehouse_.sort_by_price_desc();
                                 break;
 
                             default: std::cout << "niepoprawna opcja" << std::endl;
@@ -219,11 +221,11 @@ int Manager::manage()
                                 break;
 
                             case 1 :
-                                warehouse.sort_by_weight_asc();
+                                warehouse_.sort_by_weight_asc();
                                 break;
                                 
                             case 2 :
-                                warehouse.sort_by_weight_desc();
+                                warehouse_.sort_by_weight_desc();
                                 break;
 
                             default: std::cout << "niepoprawna opcja" << std::endl;

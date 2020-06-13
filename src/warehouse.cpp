@@ -38,33 +38,99 @@ Warehouse::~Warehouse()
     warehouse_products_.clear();
 }
 
+/*void Warehouse::add_products(std::string filename)
+{
+    std::string line, type, name, temp1, temp2, temp3, temp4, temp5, temp6, temp7;
+    float prize = 0;
+    int line_number = 0, weight = 0, series_code = 0, temp_1 = 0;
+    std::fstream file;
+    file.open(filename, std::ios::in);
+    if(file.good() == false)
+    {
+        std::cout << "blad otwarcia pliku" << std::endl;
+        exit(0);
+    }
+    while (getline(file, line))         
+    {
+        if (line == "stery")
+        {
+            switch(line_number)
+            {
+                case 1 : type = line;                           break;
+                case 2 : name = line;                           break;
+                case 3 : temp1 = line;                          break;
+                case 4 : temp2 = line;                          break;
+                case 5 : temp3 = line;                          break;
+                case 6 : prize = atof(line.c_str());            break;
+                case 7 : weight = atoi(line.c_str());           break;
+                case 8 : series_code = atoi(line.c_str());      break;
+            }
+            line_number++;
+            if (line_number == 9) 
+            {
+                line_number = 1;
+                warehouse_products_.push_back(std::make_shared<Headset>(name, temp1, temp2, temp3, prize, weight, series_code));    
+            }
+        }
+    }
+    while (getline(file, line))
+    {
+        if (line == "amortyzator")
+        {
+            std::cout << "dupa";
+            switch(line_number)
+            {
+                case 1 : type = line;                           break;
+                case 2 : name = line;                           break;
+                case 3 : temp1 = line;                          break;
+                case 4 : temp2 = line;                          break;
+                case 5 : temp3 = line;                          break;
+                case 6 : prize = atof(line.c_str());            break;
+                case 7 : weight = atoi(line.c_str());           break;
+                case 8 : temp_1 = atoi(line.c_str());           break;
+                case 9 : series_code = atoi(line.c_str());      break;
+            }
+            line_number++;
+            if(line_number == 9) 
+            {
+                line_number = 1;
+                warehouse_products_.push_back(std::make_shared<Front_shock>(name, temp1, temp2, temp3, prize, weight, temp_1, series_code));    
+            }
+        }
+    }
+    while (getline(file, line))
+    {
+        if (line == "rower")
+        {
+            switch(line_number)
+            {
+                case 1 : type = line;                           break;
+                case 2 : name = line;                           break;
+                case 3 : temp1 = line;                          break;
+                case 4 : temp2 = line;                          break;
+                case 5 : temp3 = line;                          break;
+                case 6 : temp4 = line;                          break;
+                case 7 : temp5 = line;                          break;
+                case 8 : temp6 = line;                          break; 
+                case 10 : prize = atof(line.c_str());           break;
+                case 11 : weight = atoi(line.c_str());          break;
+                case 12 : series_code = atoi(line.c_str());     break;
+            }
+            line_number++;
+            if (line_number == 12) 
+            {
+                line_number = 1;
+                warehouse_products_.push_back(std::make_shared<Bike>(name, temp1, temp2, temp3, temp4, temp5, temp6, prize, weight, series_code));    
+            }
+        }
+    }
+    
+    file.close();
+}*/
+
 std::vector<std::shared_ptr<Product>> Warehouse::get_warehouse_products()
 {
     return warehouse_products_;
-}
-
-void Warehouse::show_products()
-{
-    for (long long unsigned int i = 0; i < warehouse_products_.size(); i++)
-    {
-        std::cout << std::setw(3) << std::right << i+1 << ". ";
-        warehouse_products_[i]->show();
-    }
-    std::cout << std::endl;
-}
-
-void Warehouse::show_product_information(long long unsigned int id)
-{
-    if(id > warehouse_products_.size() || id < 1)
-    {
-        std::cout << "nieprawidlowa wartosc indeksu!!" << std::endl;
-    }
-    else
-    {
-        warehouse_products_[id-1]->show_detailed_information();
-    }
-    
-     
 }
 
 void Warehouse::sort_by_name_asc()

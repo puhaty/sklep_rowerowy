@@ -379,6 +379,33 @@ src/warehouse.cpp.s:
 	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse.cpp.s
 .PHONY : src/warehouse.cpp.s
 
+src/warehouse_presenter.o: src/warehouse_presenter.cpp.o
+
+.PHONY : src/warehouse_presenter.o
+
+# target to build an object file
+src/warehouse_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse_presenter.cpp.o
+.PHONY : src/warehouse_presenter.cpp.o
+
+src/warehouse_presenter.i: src/warehouse_presenter.cpp.i
+
+.PHONY : src/warehouse_presenter.i
+
+# target to preprocess a source file
+src/warehouse_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse_presenter.cpp.i
+.PHONY : src/warehouse_presenter.cpp.i
+
+src/warehouse_presenter.s: src/warehouse_presenter.cpp.s
+
+.PHONY : src/warehouse_presenter.s
+
+# target to generate assembly for a file
+src/warehouse_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse_presenter.cpp.s
+.PHONY : src/warehouse_presenter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -416,6 +443,9 @@ help:
 	@echo "... src/warehouse.o"
 	@echo "... src/warehouse.i"
 	@echo "... src/warehouse.s"
+	@echo "... src/warehouse_presenter.o"
+	@echo "... src/warehouse_presenter.i"
+	@echo "... src/warehouse_presenter.s"
 .PHONY : help
 
 

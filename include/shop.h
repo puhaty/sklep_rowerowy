@@ -5,7 +5,7 @@
 class Shop 
 {
 public:
-    void run_shop();
+    void run_shop(Manager&);
 };
 
 #endif /* SHOP_H */

@@ -1,7 +1,6 @@
 #include "shop.h"
 
-void Shop::run_shop()
+void Shop::run_shop(Manager& manager_)
 {
-    Manager manager_;
     manager_.manage();
 }
