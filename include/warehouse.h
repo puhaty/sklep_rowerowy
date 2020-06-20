@@ -15,10 +15,9 @@
 class Warehouse
 { 
 public:
-    Warehouse();
     ~Warehouse();
     std::vector<std::shared_ptr<Product>> get_warehouse_products();
-    //void add_products(std::string);
+    void add_products(std::string);
     void sort_by_name_asc();
     void sort_by_name_desc();
     void sort_by_price_asc();

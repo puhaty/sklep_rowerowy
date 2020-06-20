@@ -24,7 +24,7 @@ int Manager::manage()
     
     Warehouse warehouse_;
     Warehouse_presenter warehouse_presenter_;
-    //warehouse.add_products("produkty/produkty.txt");
+    warehouse_.add_products("produkty/produkty.txt");
     Basket basket_; 
     Basket_presenter basket_presenter_;
     Receipt receipt_;
@@ -49,7 +49,7 @@ int Manager::manage()
                 return 0; 
 
             case 1 :
-                warehouse_presenter_.show_products();
+                warehouse_presenter_.show_products(warehouse_);
                 break; 
 
             case 2 :
@@ -64,7 +64,7 @@ int Manager::manage()
                     std::cout << "Wprowadz dane jeszcze raz: ";
                     std::cin  >> number;
                 }
-                warehouse_presenter_.show_product_information(number);
+                warehouse_presenter_.show_product_information(warehouse_, number);
                 break;
             
             case 3 :
