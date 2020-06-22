@@ -10,11 +10,13 @@ public:
     Basket();
     ~Basket();
     std::vector<std::shared_ptr<Product>> get_basket_products();
+    void show_product();
     void add_to_basket(long long unsigned int id, Warehouse & warehouse);
     void delete_from_basket(long long unsigned int index);
     void clear_basket();
     float sum_shopping();
     float get_total_sum();
+    void final();
     friend std::ostream &operator <<(std::ostream &, Basket&);
 private:
     float total_sum;

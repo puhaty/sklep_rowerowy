@@ -217,6 +217,33 @@ src/bike.cpp.s:
 	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike.cpp.s
 .PHONY : src/bike.cpp.s
 
+src/bike_presenter.o: src/bike_presenter.cpp.o
+
+.PHONY : src/bike_presenter.o
+
+# target to build an object file
+src/bike_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike_presenter.cpp.o
+.PHONY : src/bike_presenter.cpp.o
+
+src/bike_presenter.i: src/bike_presenter.cpp.i
+
+.PHONY : src/bike_presenter.i
+
+# target to preprocess a source file
+src/bike_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike_presenter.cpp.i
+.PHONY : src/bike_presenter.cpp.i
+
+src/bike_presenter.s: src/bike_presenter.cpp.s
+
+.PHONY : src/bike_presenter.s
+
+# target to generate assembly for a file
+src/bike_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike_presenter.cpp.s
+.PHONY : src/bike_presenter.cpp.s
+
 src/front_shock.o: src/front_shock.cpp.o
 
 .PHONY : src/front_shock.o
@@ -244,6 +271,33 @@ src/front_shock.cpp.s:
 	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock.cpp.s
 .PHONY : src/front_shock.cpp.s
 
+src/front_shock_presenter.o: src/front_shock_presenter.cpp.o
+
+.PHONY : src/front_shock_presenter.o
+
+# target to build an object file
+src/front_shock_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock_presenter.cpp.o
+.PHONY : src/front_shock_presenter.cpp.o
+
+src/front_shock_presenter.i: src/front_shock_presenter.cpp.i
+
+.PHONY : src/front_shock_presenter.i
+
+# target to preprocess a source file
+src/front_shock_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock_presenter.cpp.i
+.PHONY : src/front_shock_presenter.cpp.i
+
+src/front_shock_presenter.s: src/front_shock_presenter.cpp.s
+
+.PHONY : src/front_shock_presenter.s
+
+# target to generate assembly for a file
+src/front_shock_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock_presenter.cpp.s
+.PHONY : src/front_shock_presenter.cpp.s
+
 src/headset.o: src/headset.cpp.o
 
 .PHONY : src/headset.o
@@ -270,6 +324,33 @@ src/headset.s: src/headset.cpp.s
 src/headset.cpp.s:
 	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset.cpp.s
 .PHONY : src/headset.cpp.s
+
+src/headset_presenter.o: src/headset_presenter.cpp.o
+
+.PHONY : src/headset_presenter.o
+
+# target to build an object file
+src/headset_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset_presenter.cpp.o
+.PHONY : src/headset_presenter.cpp.o
+
+src/headset_presenter.i: src/headset_presenter.cpp.i
+
+.PHONY : src/headset_presenter.i
+
+# target to preprocess a source file
+src/headset_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset_presenter.cpp.i
+.PHONY : src/headset_presenter.cpp.i
+
+src/headset_presenter.s: src/headset_presenter.cpp.s
+
+.PHONY : src/headset_presenter.s
+
+# target to generate assembly for a file
+src/headset_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset_presenter.cpp.s
+.PHONY : src/headset_presenter.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -452,12 +533,21 @@ help:
 	@echo "... src/bike.o"
 	@echo "... src/bike.i"
 	@echo "... src/bike.s"
+	@echo "... src/bike_presenter.o"
+	@echo "... src/bike_presenter.i"
+	@echo "... src/bike_presenter.s"
 	@echo "... src/front_shock.o"
 	@echo "... src/front_shock.i"
 	@echo "... src/front_shock.s"
+	@echo "... src/front_shock_presenter.o"
+	@echo "... src/front_shock_presenter.i"
+	@echo "... src/front_shock_presenter.s"
 	@echo "... src/headset.o"
 	@echo "... src/headset.i"
 	@echo "... src/headset.s"
+	@echo "... src/headset_presenter.o"
+	@echo "... src/headset_presenter.i"
+	@echo "... src/headset_presenter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

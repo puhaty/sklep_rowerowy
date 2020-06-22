@@ -1,23 +1,23 @@
-#include "warehouse_presenter.h"
+#include "warehouse.h"
 
-void Warehouse_presenter::show_products(Warehouse& warehouse_) 
+void Warehouse::show_products() 
 {
-    for (long long unsigned int i = 0; i < warehouse_.get_warehouse_products().size(); i++)
+    for (long long unsigned int i = 0; i < warehouse_products_.size(); i++)
     {
         std::cout << std::setw(3) << std::right << i+1 << ". ";
-        warehouse_.get_warehouse_products().at(i)->show();
+        warehouse_products_[i]->show();
     }
     std::cout << std::endl;
 }
 
-void Warehouse_presenter::show_product_information(Warehouse& warehouse_, long long unsigned int id) 
+void Warehouse::show_product_information(long long unsigned int id) 
 {
-    if(id > warehouse_.get_warehouse_products().size() || id < 1)
+    if(id > warehouse_products_.size() || id < 1)
     {
         std::cout << "nieprawidlowa wartosc indeksu!!" << std::endl;
     }
     else
     {
-        warehouse_.get_warehouse_products().at(id)->show_detailed_information();
+        warehouse_products_[id]->show_detailed_information();
     }
 }

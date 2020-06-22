@@ -18,6 +18,8 @@ class Warehouse
 public:
     ~Warehouse();
     std::vector<std::shared_ptr<Product>> get_warehouse_products();
+    void show_products();
+    void show_product_information(long long unsigned int);
     void add_products(std::string);
     void sort_by_name_asc();
     void sort_by_name_desc();
