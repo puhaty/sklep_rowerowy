@@ -16,7 +16,7 @@ void Basket::add_to_basket(long long unsigned int id, Warehouse & warehouse)
 {
     if(id > warehouse.get_warehouse_products().size() || id < 1)
     {
-        std::cout << "nieprawidlowa wartosc indeksu!!" << std::endl;
+        throw Basket_exception();
     }
     else
     { 
@@ -28,7 +28,8 @@ void Basket::delete_from_basket(long long unsigned int index)
 {
     if(index > basket_products_.size() || index < 1)
     {
-        std::cout << "nieprawidlowa wartosc indeksu!!" << std::endl;
+        throw Basket_exception();
+        exit(0);
     }
     else
     {

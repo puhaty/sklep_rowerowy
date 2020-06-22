@@ -24,7 +24,14 @@ int Manager::manage()
     
     Warehouse warehouse_;
     Warehouse_presenter warehouse_presenter_;
-    warehouse_.add_products("produkty/produkty.txt");
+    try
+    {
+        warehouse_.add_products("produkty/produkty.txt");
+    }
+    catch(File_exception& e)
+    {
+        e.what();
+    }
     Basket basket_; 
     Basket_presenter basket_presenter_;
     Receipt receipt_;
@@ -79,7 +86,14 @@ int Manager::manage()
                     std::cout << "Wprowadz dane jeszcze raz: ";
                     std::cin  >> number;
                 }
-                basket_.add_to_basket(number, warehouse_);
+                try
+                {
+                    basket_.add_to_basket(number, warehouse_);
+                }
+                catch(Basket_exception& e)
+                {
+                    e.what();
+                }
                 break;
             
             case 4 :
@@ -94,7 +108,14 @@ int Manager::manage()
                     std::cout << "Wprowadz dane jeszcze raz: ";
                     std::cin  >> number;
                 }
-                basket_.delete_from_basket(number);
+                try
+                {
+                    basket_.delete_from_basket(number);
+                }
+                catch(Basket_exception& e)
+                {
+                    e.what();
+                }
                 break;
 
             case 5 :
@@ -108,7 +129,14 @@ int Manager::manage()
 
             case 7 :
                 basket_presenter_.final(basket_);
-                receipt_.generate(basket_);
+                try
+                {
+                    receipt_.generate(basket_);
+                }
+                catch(Receipt_exception& e)
+                {
+                    e.what();
+                }
                 basket_.clear_basket();
                 std::cout << std::endl;
                 break;

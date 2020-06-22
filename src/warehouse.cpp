@@ -14,7 +14,7 @@ void Warehouse::add_products(std::string filename)
     file.open(filename, std::ios::in);
     if(file.good() == false)
     {
-        std::cout << "blad otwarcia pliku" << std::endl;
+        throw File_exception();
         exit(0);
     }
 

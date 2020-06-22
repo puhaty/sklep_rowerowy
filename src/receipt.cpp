@@ -12,11 +12,10 @@ void Receipt::generate(Basket & basket)
         file << "Data: " << data << std::endl;
         file << basket;
         file.close();
-        std::cout << "paragon jest zapisany w folderze 'paragon' " << std::endl;
     }
     else
     {
-        std::cout << "brak zawartosci koszyka!!!" << std::endl;
+        throw Receipt_exception();
     }
     
 } 

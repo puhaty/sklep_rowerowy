@@ -4,6 +4,7 @@
 #include "front_shock.h" 
 #include "headset.h"
 #include "bike.h"
+#include "exception.h"
 
 #include <vector>
 #include <algorithm>

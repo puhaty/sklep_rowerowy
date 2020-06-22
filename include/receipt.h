@@ -1,6 +1,7 @@
 #ifndef RECEIPT_H
 #define RECEIPT_H
 #include "basket.h"
+#include "exception.h"
 
 #include <fstream>
 #include <time.h>
