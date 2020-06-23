@@ -111,408 +111,395 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named obj
+# Target rules for targets named bike_shop
 
 # Build rule for target.
-obj: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 obj
-.PHONY : obj
+bike_shop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bike_shop
+.PHONY : bike_shop
 
 # fast build rule for target.
-obj/fast:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/build
-.PHONY : obj/fast
+bike_shop/fast:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/build
+.PHONY : bike_shop/fast
 
-#=============================================================================
-# Target rules for targets named bike_shope.exe
+core/basket.o: core/basket.cpp.o
 
-# Build rule for target.
-bike_shope.exe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bike_shope.exe
-.PHONY : bike_shope.exe
-
-# fast build rule for target.
-bike_shope.exe/fast:
-	$(MAKE) -f CMakeFiles/bike_shope.exe.dir/build.make CMakeFiles/bike_shope.exe.dir/build
-.PHONY : bike_shope.exe/fast
-
-src/basket.o: src/basket.cpp.o
-
-.PHONY : src/basket.o
+.PHONY : core/basket.o
 
 # target to build an object file
-src/basket.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket.cpp.o
-.PHONY : src/basket.cpp.o
+core/basket.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/basket.cpp.o
+.PHONY : core/basket.cpp.o
 
-src/basket.i: src/basket.cpp.i
+core/basket.i: core/basket.cpp.i
 
-.PHONY : src/basket.i
+.PHONY : core/basket.i
 
 # target to preprocess a source file
-src/basket.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket.cpp.i
-.PHONY : src/basket.cpp.i
+core/basket.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/basket.cpp.i
+.PHONY : core/basket.cpp.i
 
-src/basket.s: src/basket.cpp.s
+core/basket.s: core/basket.cpp.s
 
-.PHONY : src/basket.s
+.PHONY : core/basket.s
 
 # target to generate assembly for a file
-src/basket.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket.cpp.s
-.PHONY : src/basket.cpp.s
+core/basket.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/basket.cpp.s
+.PHONY : core/basket.cpp.s
 
-src/basket_presenter.o: src/basket_presenter.cpp.o
+core/bike.o: core/bike.cpp.o
 
-.PHONY : src/basket_presenter.o
+.PHONY : core/bike.o
 
 # target to build an object file
-src/basket_presenter.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket_presenter.cpp.o
-.PHONY : src/basket_presenter.cpp.o
+core/bike.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/bike.cpp.o
+.PHONY : core/bike.cpp.o
 
-src/basket_presenter.i: src/basket_presenter.cpp.i
+core/bike.i: core/bike.cpp.i
 
-.PHONY : src/basket_presenter.i
+.PHONY : core/bike.i
 
 # target to preprocess a source file
-src/basket_presenter.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket_presenter.cpp.i
-.PHONY : src/basket_presenter.cpp.i
+core/bike.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/bike.cpp.i
+.PHONY : core/bike.cpp.i
 
-src/basket_presenter.s: src/basket_presenter.cpp.s
+core/bike.s: core/bike.cpp.s
 
-.PHONY : src/basket_presenter.s
+.PHONY : core/bike.s
 
 # target to generate assembly for a file
-src/basket_presenter.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/basket_presenter.cpp.s
-.PHONY : src/basket_presenter.cpp.s
+core/bike.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/bike.cpp.s
+.PHONY : core/bike.cpp.s
 
-src/bike.o: src/bike.cpp.o
+core/front_shock.o: core/front_shock.cpp.o
 
-.PHONY : src/bike.o
+.PHONY : core/front_shock.o
 
 # target to build an object file
-src/bike.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike.cpp.o
-.PHONY : src/bike.cpp.o
+core/front_shock.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/front_shock.cpp.o
+.PHONY : core/front_shock.cpp.o
 
-src/bike.i: src/bike.cpp.i
+core/front_shock.i: core/front_shock.cpp.i
 
-.PHONY : src/bike.i
+.PHONY : core/front_shock.i
 
 # target to preprocess a source file
-src/bike.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike.cpp.i
-.PHONY : src/bike.cpp.i
+core/front_shock.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/front_shock.cpp.i
+.PHONY : core/front_shock.cpp.i
 
-src/bike.s: src/bike.cpp.s
+core/front_shock.s: core/front_shock.cpp.s
 
-.PHONY : src/bike.s
+.PHONY : core/front_shock.s
 
 # target to generate assembly for a file
-src/bike.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike.cpp.s
-.PHONY : src/bike.cpp.s
+core/front_shock.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/front_shock.cpp.s
+.PHONY : core/front_shock.cpp.s
 
-src/bike_presenter.o: src/bike_presenter.cpp.o
+core/headset.o: core/headset.cpp.o
 
-.PHONY : src/bike_presenter.o
+.PHONY : core/headset.o
 
 # target to build an object file
-src/bike_presenter.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike_presenter.cpp.o
-.PHONY : src/bike_presenter.cpp.o
+core/headset.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/headset.cpp.o
+.PHONY : core/headset.cpp.o
 
-src/bike_presenter.i: src/bike_presenter.cpp.i
+core/headset.i: core/headset.cpp.i
 
-.PHONY : src/bike_presenter.i
+.PHONY : core/headset.i
 
 # target to preprocess a source file
-src/bike_presenter.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike_presenter.cpp.i
-.PHONY : src/bike_presenter.cpp.i
+core/headset.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/headset.cpp.i
+.PHONY : core/headset.cpp.i
 
-src/bike_presenter.s: src/bike_presenter.cpp.s
+core/headset.s: core/headset.cpp.s
 
-.PHONY : src/bike_presenter.s
+.PHONY : core/headset.s
 
 # target to generate assembly for a file
-src/bike_presenter.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/bike_presenter.cpp.s
-.PHONY : src/bike_presenter.cpp.s
+core/headset.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/headset.cpp.s
+.PHONY : core/headset.cpp.s
 
-src/front_shock.o: src/front_shock.cpp.o
+core/receipt.o: core/receipt.cpp.o
 
-.PHONY : src/front_shock.o
+.PHONY : core/receipt.o
 
 # target to build an object file
-src/front_shock.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock.cpp.o
-.PHONY : src/front_shock.cpp.o
+core/receipt.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/receipt.cpp.o
+.PHONY : core/receipt.cpp.o
 
-src/front_shock.i: src/front_shock.cpp.i
+core/receipt.i: core/receipt.cpp.i
 
-.PHONY : src/front_shock.i
+.PHONY : core/receipt.i
 
 # target to preprocess a source file
-src/front_shock.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock.cpp.i
-.PHONY : src/front_shock.cpp.i
+core/receipt.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/receipt.cpp.i
+.PHONY : core/receipt.cpp.i
 
-src/front_shock.s: src/front_shock.cpp.s
+core/receipt.s: core/receipt.cpp.s
 
-.PHONY : src/front_shock.s
+.PHONY : core/receipt.s
 
 # target to generate assembly for a file
-src/front_shock.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock.cpp.s
-.PHONY : src/front_shock.cpp.s
+core/receipt.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/receipt.cpp.s
+.PHONY : core/receipt.cpp.s
 
-src/front_shock_presenter.o: src/front_shock_presenter.cpp.o
+core/shop.o: core/shop.cpp.o
 
-.PHONY : src/front_shock_presenter.o
+.PHONY : core/shop.o
 
 # target to build an object file
-src/front_shock_presenter.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock_presenter.cpp.o
-.PHONY : src/front_shock_presenter.cpp.o
+core/shop.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/shop.cpp.o
+.PHONY : core/shop.cpp.o
 
-src/front_shock_presenter.i: src/front_shock_presenter.cpp.i
+core/shop.i: core/shop.cpp.i
 
-.PHONY : src/front_shock_presenter.i
+.PHONY : core/shop.i
 
 # target to preprocess a source file
-src/front_shock_presenter.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock_presenter.cpp.i
-.PHONY : src/front_shock_presenter.cpp.i
+core/shop.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/shop.cpp.i
+.PHONY : core/shop.cpp.i
 
-src/front_shock_presenter.s: src/front_shock_presenter.cpp.s
+core/shop.s: core/shop.cpp.s
 
-.PHONY : src/front_shock_presenter.s
+.PHONY : core/shop.s
 
 # target to generate assembly for a file
-src/front_shock_presenter.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/front_shock_presenter.cpp.s
-.PHONY : src/front_shock_presenter.cpp.s
+core/shop.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/shop.cpp.s
+.PHONY : core/shop.cpp.s
 
-src/headset.o: src/headset.cpp.o
+core/warehouse.o: core/warehouse.cpp.o
 
-.PHONY : src/headset.o
+.PHONY : core/warehouse.o
 
 # target to build an object file
-src/headset.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset.cpp.o
-.PHONY : src/headset.cpp.o
+core/warehouse.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/warehouse.cpp.o
+.PHONY : core/warehouse.cpp.o
 
-src/headset.i: src/headset.cpp.i
+core/warehouse.i: core/warehouse.cpp.i
 
-.PHONY : src/headset.i
+.PHONY : core/warehouse.i
 
 # target to preprocess a source file
-src/headset.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset.cpp.i
-.PHONY : src/headset.cpp.i
+core/warehouse.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/warehouse.cpp.i
+.PHONY : core/warehouse.cpp.i
 
-src/headset.s: src/headset.cpp.s
+core/warehouse.s: core/warehouse.cpp.s
 
-.PHONY : src/headset.s
+.PHONY : core/warehouse.s
 
 # target to generate assembly for a file
-src/headset.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset.cpp.s
-.PHONY : src/headset.cpp.s
+core/warehouse.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/core/warehouse.cpp.s
+.PHONY : core/warehouse.cpp.s
 
-src/headset_presenter.o: src/headset_presenter.cpp.o
+main_tui.o: main_tui.cpp.o
 
-.PHONY : src/headset_presenter.o
+.PHONY : main_tui.o
 
 # target to build an object file
-src/headset_presenter.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset_presenter.cpp.o
-.PHONY : src/headset_presenter.cpp.o
+main_tui.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/main_tui.cpp.o
+.PHONY : main_tui.cpp.o
 
-src/headset_presenter.i: src/headset_presenter.cpp.i
+main_tui.i: main_tui.cpp.i
 
-.PHONY : src/headset_presenter.i
+.PHONY : main_tui.i
 
 # target to preprocess a source file
-src/headset_presenter.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset_presenter.cpp.i
-.PHONY : src/headset_presenter.cpp.i
+main_tui.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/main_tui.cpp.i
+.PHONY : main_tui.cpp.i
 
-src/headset_presenter.s: src/headset_presenter.cpp.s
+main_tui.s: main_tui.cpp.s
 
-.PHONY : src/headset_presenter.s
+.PHONY : main_tui.s
 
 # target to generate assembly for a file
-src/headset_presenter.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/headset_presenter.cpp.s
-.PHONY : src/headset_presenter.cpp.s
+main_tui.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/main_tui.cpp.s
+.PHONY : main_tui.cpp.s
 
-src/main.o: src/main.cpp.o
+tui/basket_presenter.o: tui/basket_presenter.cpp.o
 
-.PHONY : src/main.o
+.PHONY : tui/basket_presenter.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+tui/basket_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/basket_presenter.cpp.o
+.PHONY : tui/basket_presenter.cpp.o
 
-src/main.i: src/main.cpp.i
+tui/basket_presenter.i: tui/basket_presenter.cpp.i
 
-.PHONY : src/main.i
+.PHONY : tui/basket_presenter.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+tui/basket_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/basket_presenter.cpp.i
+.PHONY : tui/basket_presenter.cpp.i
 
-src/main.s: src/main.cpp.s
+tui/basket_presenter.s: tui/basket_presenter.cpp.s
 
-.PHONY : src/main.s
+.PHONY : tui/basket_presenter.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+tui/basket_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/basket_presenter.cpp.s
+.PHONY : tui/basket_presenter.cpp.s
 
-src/manager.o: src/manager.cpp.o
+tui/bike_presenter.o: tui/bike_presenter.cpp.o
 
-.PHONY : src/manager.o
+.PHONY : tui/bike_presenter.o
 
 # target to build an object file
-src/manager.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/manager.cpp.o
-.PHONY : src/manager.cpp.o
+tui/bike_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/bike_presenter.cpp.o
+.PHONY : tui/bike_presenter.cpp.o
 
-src/manager.i: src/manager.cpp.i
+tui/bike_presenter.i: tui/bike_presenter.cpp.i
 
-.PHONY : src/manager.i
+.PHONY : tui/bike_presenter.i
 
 # target to preprocess a source file
-src/manager.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/manager.cpp.i
-.PHONY : src/manager.cpp.i
+tui/bike_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/bike_presenter.cpp.i
+.PHONY : tui/bike_presenter.cpp.i
 
-src/manager.s: src/manager.cpp.s
+tui/bike_presenter.s: tui/bike_presenter.cpp.s
 
-.PHONY : src/manager.s
+.PHONY : tui/bike_presenter.s
 
 # target to generate assembly for a file
-src/manager.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/manager.cpp.s
-.PHONY : src/manager.cpp.s
+tui/bike_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/bike_presenter.cpp.s
+.PHONY : tui/bike_presenter.cpp.s
 
-src/receipt.o: src/receipt.cpp.o
+tui/front_shock_presenter.o: tui/front_shock_presenter.cpp.o
 
-.PHONY : src/receipt.o
+.PHONY : tui/front_shock_presenter.o
 
 # target to build an object file
-src/receipt.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/receipt.cpp.o
-.PHONY : src/receipt.cpp.o
+tui/front_shock_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/front_shock_presenter.cpp.o
+.PHONY : tui/front_shock_presenter.cpp.o
 
-src/receipt.i: src/receipt.cpp.i
+tui/front_shock_presenter.i: tui/front_shock_presenter.cpp.i
 
-.PHONY : src/receipt.i
+.PHONY : tui/front_shock_presenter.i
 
 # target to preprocess a source file
-src/receipt.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/receipt.cpp.i
-.PHONY : src/receipt.cpp.i
+tui/front_shock_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/front_shock_presenter.cpp.i
+.PHONY : tui/front_shock_presenter.cpp.i
 
-src/receipt.s: src/receipt.cpp.s
+tui/front_shock_presenter.s: tui/front_shock_presenter.cpp.s
 
-.PHONY : src/receipt.s
+.PHONY : tui/front_shock_presenter.s
 
 # target to generate assembly for a file
-src/receipt.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/receipt.cpp.s
-.PHONY : src/receipt.cpp.s
+tui/front_shock_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/front_shock_presenter.cpp.s
+.PHONY : tui/front_shock_presenter.cpp.s
 
-src/shop.o: src/shop.cpp.o
+tui/headset_presenter.o: tui/headset_presenter.cpp.o
 
-.PHONY : src/shop.o
+.PHONY : tui/headset_presenter.o
 
 # target to build an object file
-src/shop.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.o
-.PHONY : src/shop.cpp.o
+tui/headset_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/headset_presenter.cpp.o
+.PHONY : tui/headset_presenter.cpp.o
 
-src/shop.i: src/shop.cpp.i
+tui/headset_presenter.i: tui/headset_presenter.cpp.i
 
-.PHONY : src/shop.i
+.PHONY : tui/headset_presenter.i
 
 # target to preprocess a source file
-src/shop.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.i
-.PHONY : src/shop.cpp.i
+tui/headset_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/headset_presenter.cpp.i
+.PHONY : tui/headset_presenter.cpp.i
 
-src/shop.s: src/shop.cpp.s
+tui/headset_presenter.s: tui/headset_presenter.cpp.s
 
-.PHONY : src/shop.s
+.PHONY : tui/headset_presenter.s
 
 # target to generate assembly for a file
-src/shop.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.s
-.PHONY : src/shop.cpp.s
+tui/headset_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/headset_presenter.cpp.s
+.PHONY : tui/headset_presenter.cpp.s
 
-src/warehouse.o: src/warehouse.cpp.o
+tui/manager.o: tui/manager.cpp.o
 
-.PHONY : src/warehouse.o
+.PHONY : tui/manager.o
 
 # target to build an object file
-src/warehouse.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse.cpp.o
-.PHONY : src/warehouse.cpp.o
+tui/manager.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/manager.cpp.o
+.PHONY : tui/manager.cpp.o
 
-src/warehouse.i: src/warehouse.cpp.i
+tui/manager.i: tui/manager.cpp.i
 
-.PHONY : src/warehouse.i
+.PHONY : tui/manager.i
 
 # target to preprocess a source file
-src/warehouse.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse.cpp.i
-.PHONY : src/warehouse.cpp.i
+tui/manager.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/manager.cpp.i
+.PHONY : tui/manager.cpp.i
 
-src/warehouse.s: src/warehouse.cpp.s
+tui/manager.s: tui/manager.cpp.s
 
-.PHONY : src/warehouse.s
+.PHONY : tui/manager.s
 
 # target to generate assembly for a file
-src/warehouse.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse.cpp.s
-.PHONY : src/warehouse.cpp.s
+tui/manager.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/manager.cpp.s
+.PHONY : tui/manager.cpp.s
 
-src/warehouse_presenter.o: src/warehouse_presenter.cpp.o
+tui/warehouse_presenter.o: tui/warehouse_presenter.cpp.o
 
-.PHONY : src/warehouse_presenter.o
+.PHONY : tui/warehouse_presenter.o
 
 # target to build an object file
-src/warehouse_presenter.cpp.o:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse_presenter.cpp.o
-.PHONY : src/warehouse_presenter.cpp.o
+tui/warehouse_presenter.cpp.o:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/warehouse_presenter.cpp.o
+.PHONY : tui/warehouse_presenter.cpp.o
 
-src/warehouse_presenter.i: src/warehouse_presenter.cpp.i
+tui/warehouse_presenter.i: tui/warehouse_presenter.cpp.i
 
-.PHONY : src/warehouse_presenter.i
+.PHONY : tui/warehouse_presenter.i
 
 # target to preprocess a source file
-src/warehouse_presenter.cpp.i:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse_presenter.cpp.i
-.PHONY : src/warehouse_presenter.cpp.i
+tui/warehouse_presenter.cpp.i:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/warehouse_presenter.cpp.i
+.PHONY : tui/warehouse_presenter.cpp.i
 
-src/warehouse_presenter.s: src/warehouse_presenter.cpp.s
+tui/warehouse_presenter.s: tui/warehouse_presenter.cpp.s
 
-.PHONY : src/warehouse_presenter.s
+.PHONY : tui/warehouse_presenter.s
 
 # target to generate assembly for a file
-src/warehouse_presenter.cpp.s:
-	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/warehouse_presenter.cpp.s
-.PHONY : src/warehouse_presenter.cpp.s
+tui/warehouse_presenter.cpp.s:
+	$(MAKE) -f CMakeFiles/bike_shop.dir/build.make CMakeFiles/bike_shop.dir/tui/warehouse_presenter.cpp.s
+.PHONY : tui/warehouse_presenter.cpp.s
 
 # Help Target
 help:
@@ -521,51 +508,50 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... bike_shop"
 	@echo "... edit_cache"
-	@echo "... obj"
-	@echo "... bike_shope.exe"
-	@echo "... src/basket.o"
-	@echo "... src/basket.i"
-	@echo "... src/basket.s"
-	@echo "... src/basket_presenter.o"
-	@echo "... src/basket_presenter.i"
-	@echo "... src/basket_presenter.s"
-	@echo "... src/bike.o"
-	@echo "... src/bike.i"
-	@echo "... src/bike.s"
-	@echo "... src/bike_presenter.o"
-	@echo "... src/bike_presenter.i"
-	@echo "... src/bike_presenter.s"
-	@echo "... src/front_shock.o"
-	@echo "... src/front_shock.i"
-	@echo "... src/front_shock.s"
-	@echo "... src/front_shock_presenter.o"
-	@echo "... src/front_shock_presenter.i"
-	@echo "... src/front_shock_presenter.s"
-	@echo "... src/headset.o"
-	@echo "... src/headset.i"
-	@echo "... src/headset.s"
-	@echo "... src/headset_presenter.o"
-	@echo "... src/headset_presenter.i"
-	@echo "... src/headset_presenter.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/manager.o"
-	@echo "... src/manager.i"
-	@echo "... src/manager.s"
-	@echo "... src/receipt.o"
-	@echo "... src/receipt.i"
-	@echo "... src/receipt.s"
-	@echo "... src/shop.o"
-	@echo "... src/shop.i"
-	@echo "... src/shop.s"
-	@echo "... src/warehouse.o"
-	@echo "... src/warehouse.i"
-	@echo "... src/warehouse.s"
-	@echo "... src/warehouse_presenter.o"
-	@echo "... src/warehouse_presenter.i"
-	@echo "... src/warehouse_presenter.s"
+	@echo "... core/basket.o"
+	@echo "... core/basket.i"
+	@echo "... core/basket.s"
+	@echo "... core/bike.o"
+	@echo "... core/bike.i"
+	@echo "... core/bike.s"
+	@echo "... core/front_shock.o"
+	@echo "... core/front_shock.i"
+	@echo "... core/front_shock.s"
+	@echo "... core/headset.o"
+	@echo "... core/headset.i"
+	@echo "... core/headset.s"
+	@echo "... core/receipt.o"
+	@echo "... core/receipt.i"
+	@echo "... core/receipt.s"
+	@echo "... core/shop.o"
+	@echo "... core/shop.i"
+	@echo "... core/shop.s"
+	@echo "... core/warehouse.o"
+	@echo "... core/warehouse.i"
+	@echo "... core/warehouse.s"
+	@echo "... main_tui.o"
+	@echo "... main_tui.i"
+	@echo "... main_tui.s"
+	@echo "... tui/basket_presenter.o"
+	@echo "... tui/basket_presenter.i"
+	@echo "... tui/basket_presenter.s"
+	@echo "... tui/bike_presenter.o"
+	@echo "... tui/bike_presenter.i"
+	@echo "... tui/bike_presenter.s"
+	@echo "... tui/front_shock_presenter.o"
+	@echo "... tui/front_shock_presenter.i"
+	@echo "... tui/front_shock_presenter.s"
+	@echo "... tui/headset_presenter.o"
+	@echo "... tui/headset_presenter.i"
+	@echo "... tui/headset_presenter.s"
+	@echo "... tui/manager.o"
+	@echo "... tui/manager.i"
+	@echo "... tui/manager.s"
+	@echo "... tui/warehouse_presenter.o"
+	@echo "... tui/warehouse_presenter.i"
+	@echo "... tui/warehouse_presenter.s"
 .PHONY : help
 
 

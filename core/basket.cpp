@@ -10,11 +10,11 @@ Basket::~Basket()
 std::vector<std::shared_ptr<Product>> Basket::get_basket_products()
 {
     return basket_products_;
-}
+}  
 
 void Basket::add_to_basket(long long unsigned int id, Warehouse & warehouse)
 {
-    if(id > warehouse.get_warehouse_products().size() || id < 1)
+    if (id > warehouse.get_warehouse_products().size() || id < 1)
     {
         throw Basket_exception();
     }
