@@ -1,6 +1,5 @@
 #include "shop.h"
 
-
 int main()
 {
 	Shop Bike_shop;
