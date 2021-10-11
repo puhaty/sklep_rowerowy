@@ -25,7 +25,7 @@ int Manager::manage()
     Warehouse warehouse_;
     try
     {
-        warehouse_.add_products("produkty/produkty.txt");
+        warehouse_.add_products("../produkty/produkty.txt");
     }
     catch(File_exception& e)
     {
@@ -130,6 +130,7 @@ int Manager::manage()
                 try
                 {
                     receipt_.generate(basket_);
+                    std::cout << "paragon jes zapisany w folderze paragon" << std::endl;
                 }
                 catch(Receipt_exception& e)
                 {
