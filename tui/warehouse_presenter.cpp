@@ -18,6 +18,6 @@ void Warehouse::show_product_information(long long unsigned int id)
     }
     else
     {
-        warehouse_products_[id]->show_detailed_information();
+        warehouse_products_[id - 1]->show_detailed_information();
     }
 }
