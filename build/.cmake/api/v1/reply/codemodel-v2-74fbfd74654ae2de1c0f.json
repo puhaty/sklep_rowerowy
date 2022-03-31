@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bike_shop",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bike_shop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bike_shop-Debug-334b63642df82ee9c8bd.json",
+					"name" : "bike_shop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run-Debug-0e53fc524e1d60ee314e.json",
+					"name" : "run",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/media/puhaty/Dupex Data/programowanie/C++/object/studia/projekt_II/sklep_rowerowy/proe2020l_gr_103_sklep_rowerowy/build",
+		"source" : "/media/puhaty/Dupex Data/programowanie/C++/object/studia/projekt_II/sklep_rowerowy/proe2020l_gr_103_sklep_rowerowy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

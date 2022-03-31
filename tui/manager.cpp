@@ -25,7 +25,7 @@ int Manager::manage()
     Warehouse warehouse_;
     try
     {
-        warehouse_.add_products("/media/puhaty/Dupex Data/programowanie/C++/object/studia/projekt_II/sklep_rowerowy/proe2020l_gr_103_sklep_rowerowy/produkty/produkty.txt");
+        warehouse_.add_products("produkty/produkty.txt");
     }
     catch(File_exception& e)
     {
